@@ -12,6 +12,7 @@ const modes = document.querySelectorAll('.modes div');
 
 
 
+
 window.onload = function() {
 
     let time, 
