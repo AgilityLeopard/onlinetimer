@@ -24,12 +24,18 @@ window.onload = function() {
         time = parseInt(hoursContainer.value) * 60 * 60 + parseInt(minutesContainer.value) * 60 +  parseInt(secondsContainer.value);
         mode = 'none';
     }
+
     secondsContainer.oninput = function() {
         clearInterval(timer);
         time = parseInt(hoursContainer.value) * 60 * 60 + parseInt(minutesContainer.value) * 60 +  parseInt(secondsContainer.value);
         mode = 'none';
     }
 
+    hoursContainer.oninput = function() {
+        clearInterval(timer);
+        time = parseInt(hoursContainer.value) * 60 * 60 + parseInt(minutesContainer.value) * 60 +  parseInt(secondsContainer.value);
+        mode = 'none';
+    }
     standardMode.onclick = function() {
         //1 hour
         clearInterval(timer);
