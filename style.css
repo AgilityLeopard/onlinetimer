@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', sans-serif;
+}
+
+html {
+    font-size: 16px;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    background-color: #040315;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    height: 70%;
+}
+
+header {
+    height: 10%;
+    padding: 2%;
+    background-color: #d0ccaf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid #02020c80;
+}
+
+h1 {
+    font-size: 3.13rem;
+    color: #ca2542;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.timer-container {
+    background-color: #d0ccaf;
+    width: 40%;
+    border: 2px solid #02020c80;
+    border-radius: 5px;
+}
+
+.modes {
+    border-bottom: 1px solid #807d6a;
+}
+
+.modes, .controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.modes div, .controls div {
+    flex-grow: 1;
+    padding: 2%;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.modes div:hover, .controls div:hover {
+    background-color: #afab91;
+    cursor: pointer;
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid #807d6a;
+}
+
+#short, #long, #pause, #reset {
+    border-left: 1px solid #807d6a;
+}
+
+.time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 24vh;
+}
+
+.time-values {
+    font-size: 5.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time-values input {
+    background-color: #afab91;
+    padding: 30px;
+    margin: 20 0px;
+    border-radius: 23px;
+    font-size: 1.4rem;
+    width: 20%;
+
+
+}
+
+@media only screen and (min-width: 520px) and (max-width: 900px), (max-height: 768px) {
+    html {
+        font-size: 10px;
+    }
+
+    header {
+        padding: 4%;
+    }
+
+    .timer-container{
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+    html {
+        font-size: 8px;
+    }
+
+    header {
+        padding: 5%;
+    }
+
+    .timer-container{
+        width: 60%;
+    }
+
+}

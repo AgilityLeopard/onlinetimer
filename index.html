@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Онлайн Таймер</h1>
+    </header>
+    <main>
+        <div class="timer-container">
+            <div class="modes">
+                <div id="standard" class="mode">
+                    <span>Час</span>
+                </div>
+                <div id="short" class="mode">
+                    <span>30 Минут</span>
+                </div>
+                <div id="long" class="mode">
+                    <span>Урок 45 минут</span>
+                </div>
+            </div>
+            <div class="time">
+                <div class="time-values"><input type="text" id="hours"/>:<input type="text" id="minutes"/>:<input type="text" id="seconds"/></div>
+            </div>
+            <div class="controls">
+                <div id="play">
+                    <span>Пуск</span>
+                </div>
+                <div id="pause">
+                    <span>Пауза</span>
+                </div>
+                <div id="reset">
+                    <span>Сброс</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
